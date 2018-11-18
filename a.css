@@ -1,0 +1,142 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  height: 70px;
+  width: 1308px;
+  font-size: 24px;
+  padding-left: 40px;
+}
+li {
+  float: left;
+  padding-top: 7px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 136px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+#welcome-section {
+  margin-top: 0;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-image:url("gradient.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  color: black;
+
+}
+
+.welcome__header {
+   text-align: center;
+    font-size: 55px;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+.welcome__text{
+  font-style: italic;
+  font-size: 39px;
+
+   text-align: center;
+   
+
+}
+.welcome__text1 {
+  font-style: italic;
+ 
+   text-align: center;
+   padding-top: 100px;
+   font-size: 39px;
+
+}
+
+
+#about{
+
+width: 100%;
+   background-repeat: no-repeat;
+   height: 800px;
+  background-image:url("abt.png");
+  background-attachment: fixed;
+  background-size: cover;
+  top:120px;
+}
+
+
+#footer{
+  width: 100%;
+  height: 100vh;
+  background-image:url("footer.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+opacity:80%;
+}
+
+
+
+#right{
+  position: absolute;
+  margin-right: 30px;
+font-size:24px;
+  top:720px;
+  width:700px;
+
+}
+
+#left{
+  
+ top:190px;
+ 
+  margin-left: 800px;
+
+
+}
+#text{
+  font-size: 80px;
+  font-family: 'Lobster', cursive;
+   padding-top:230px;
+  animation:blinkingText 2s infinite linear;
+
+}
+
+@keyframes blinkingText{
+    0%{     color: black;    }
+    49%{    color: grey; }
+    50%{    color: #e9ecef;  }
+    79%{color:#ced4da;}
+    69%{    color:#e9ecef;  }
+    89%{    color:grey;  }
+    100%{   color: black;    }
+}
+
+
+
+#touch{
+  font-size: 80px;
+ font-family: 'Bree Serif', serif;
+ color: white;
+   padding-top:190px;
+   text-align: center;
+
+}
+a { 
+    display:inline-block;
+
+   padding: 80px;
+}
+
+a:hover{
+  transform: scale(1.2);
+  box-shadow: 5px 10px;
+}
