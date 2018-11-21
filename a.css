@@ -31,112 +31,194 @@ li a:hover {
   width: 100%;
   height: 100vh;
   text-align: center;
-  background-image:url("gradient.jpg");
+  background-image: url("gradient.jpg");
   background-attachment: fixed;
   background-size: cover;
   color: black;
-
 }
 
 .welcome__header {
-   text-align: center;
-    font-size: 55px;
-    font-family: 'Allerta Stencil', sans-serif;
+  text-align: center;
+  font-size: 65px;
+  font-family: "Allerta Stencil", sans-serif;
+  color: #2c2c2c;
+
+  letter-spacing: 0.05em;
+  text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.2);
 }
 
-.welcome__text{
+@-webkit-keyframes blurFadeInOut {
+  0% {
+    opacity: 0;
+
+    text-shadow: 0px 0px 40px #fff;
+    -webkit-transform: scale(1.3);
+  }
+  20%,
+  75% {
+    opacity: 1;
+    text-shadow: 0px 0px 1px #fff;
+    -webkit-transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    text-shadow: 0px 0px 50px #fff;
+    -webkit-transform: scale(0);
+  }
+}
+
+.welcome__text {
   font-style: italic;
   font-size: 39px;
-
-   text-align: center;
-   
-
+  -webkit-animation: blurFadeInOut 4s ease-in backwards;
+  animation-iteration-count: infinite;
+  text-align: center;
+  animation-delay: 1.3s;
+  font-family: "Noto Sans TC", sans-serif;
+}
+.welcome__text2 {
+  font-style: italic;
+  font-size: 39px;
+  -webkit-animation: blurFadeInOut 5.8s ease-in backwards;
+  animation-iteration-count: infinite;
+  text-align: center;
+  -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  -ms-animation-delay: 6s;
+  animation-delay: 5.5s;
 }
 .welcome__text1 {
   font-style: italic;
- 
-   text-align: center;
-   padding-top: 100px;
-   font-size: 39px;
-
+  font-family: "PT Sans", sans-serif;
+  text-align: center;
+  padding-top: 90px;
+  font-size: 69px;
+  font-family: "Open Sans", Sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+  position: relative;
 }
 
+h3:before,
+h3:after {
+  content: " ";
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  border-top: 2px solid #121212;
+  border-bottom: 2px solid #121212;
+}
 
-#about{
+h3:before {
+  margin: 5px 0 0 -110px;
+}
 
-width: 100%;
-   background-repeat: no-repeat;
-   height: 800px;
-  background-image:url("abt.png");
+h3:after {
+  margin: 5px 0 0 10px;
+}
+
+#about {
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 900px;
+  background-image: url("abt.png");
   background-attachment: fixed;
   background-size: cover;
-  top:120px;
+  top: 190px;
 }
 
-
-#footer{
+#footer {
   width: 100%;
   height: 100vh;
-  background-image:url("footer.jpg");
+  background-image: url("footer.jpg");
   background-attachment: fixed;
   background-size: cover;
-opacity:80%;
+  opacity: 80%;
 }
 
-
-
-#right{
+#right {
   position: absolute;
   margin-right: 30px;
-font-size:24px;
-  top:720px;
-  width:700px;
-
+  font-size: 24px;
+  top: 720px;
+  width: 700px;
 }
 
-#left{
-  
- top:190px;
- 
+#left {
+  top: 190px;
+
   margin-left: 800px;
-
-
 }
-#text{
+#text {
   font-size: 80px;
-  font-family: 'Lobster', cursive;
-   padding-top:230px;
-  animation:blinkingText 2s infinite linear;
-
+  font-family: "Lobster", cursive;
+  padding-top: 230px;
+  animation: blinkingText 3s infinite linear;
 }
 
-@keyframes blinkingText{
-    0%{     color: black;    }
-    49%{    color: grey; }
-    50%{    color: #e9ecef;  }
-    79%{color:#ced4da;}
-    69%{    color:#e9ecef;  }
-    89%{    color:grey;  }
-    100%{   color: black;    }
+@keyframes blinkingText {
+  0% {
+    color: #1971c2;
+  }
+  49% {
+    color: #339af0;
+  }
+  50% {
+    color: ##a5d8ff;
+  }
+  79% {
+    color: #d0ebff;
+  }
+  69% {
+    color: ##a5d8ff;
+  }
+  89% {
+    color: #339af0;
+  }
+  100% {
+    color: #1971c2;
+  }
 }
 
-
-
-#touch{
+#touch {
   font-size: 80px;
- font-family: 'Bree Serif', serif;
- color: white;
-   padding-top:190px;
-   text-align: center;
-
+  font-family: "Bree Serif", serif;
+  color: white;
+  padding-top: 190px;
+  text-align: center;
 }
-a { 
-    display:inline-block;
+a {
+  display: inline-block;
 
-   padding: 80px;
+  padding: 80px;
 }
 
-a:hover{
+a:hover {
   transform: scale(1.2);
-  box-shadow: 5px 10px;
+  box-shadow: 5px 10px 10px #888888;
+}
+
+@media only screen and (max-width: 768px) {
+  ul {
+    margin-left: 8px;
+    text-align: center;
+    width: 90%;
+  }
+  nav ul li {
+    display: inline-block;
+    margin: 0px;
+    margin-top: 0px;
+  }
+  body {
+    width: "device-width";
+  }
+
+  #about {
+    margin-left: 20px;
+    text-align: justify;
+    width: 90%;
+  }
 }
