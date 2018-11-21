@@ -237,23 +237,29 @@ a:hover{
         margin-left: 20px;
         text-align: justify;
         width:auto;
-    
- height: auto;
-
+  height: 1600px;
+  top:190px;
     }
-  #welcome-section {
-    width:auto;
-    
- height: auto;
+
+#welcome-section {
+  margin-top: 0;
+  width: 160%;
+  height: 50vh;
+  text-align: center;
+  background-image:url("gradient(1).jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  color: black;
 
 }
+
 li a {
 
   padding: 6px 86px;
   text-decoration: none;
 }
     #right{
-      font-size: 40px;
+      font-size: 100px;
       padding-top: 1080px;
     }
     #footer{
