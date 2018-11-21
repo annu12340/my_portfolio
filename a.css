@@ -246,7 +246,7 @@ a:hover{
   width: 160%;
   height: 50vh;
   text-align: center;
-  background-image:url("gradient(1).jpg");
+  background-image:url("gradient (1).jpg");
   background-attachment: fixed;
   background-size: cover;
   color: black;
@@ -258,7 +258,7 @@ li a {
   padding: 6px 86px;
   text-decoration: none;
 }
-    #right{
+    #left{
       font-size: 100px;
       padding-top: 1080px;
     }
