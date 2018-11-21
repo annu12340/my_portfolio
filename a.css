@@ -222,17 +222,30 @@ a:hover{
         margin-top: 0px;
     }
     body{
-        width: "device-width";
+        width:auto;
+    
+ height: auto;
     }
   #home{
-    width: 100%;
+   width:auto;
+    
+ height: auto;
   }
     #about {
         margin-left: 20px;
         text-align: justify;
-        width: 100%;
+        width:auto;
+    
+ height: auto;
 
     }
+  #welcome-section {
+    width:auto;
+    
+ height: auto;
+
+}
+
     #right{
       font-size: 40px;
       padding-top: 80px;
